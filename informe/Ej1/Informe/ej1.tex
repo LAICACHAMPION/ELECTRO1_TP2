@@ -5,6 +5,10 @@
 
 
 \begin{document}
+\section{Introducción}
+En el presente informe se desarrolla el análisis de un amplificador construido a partir de transistores, la construcción de dicho amplificador y la medición de sus características.
+\section{Objetivos}
+Comprovar en la practica algunos de los aspectos mas destacados de los circuitos estudiados durante el curso de Electronica 1, dentro de un marco de simulación de recursos escasos.
 
 \section{Amplificador}
 Se construyó el amplificador de la figura \ref{fig:cir}. Tal como se observa en ella, el circuito es un colector común con una fuente de corriente, cuyo objetivo es polarizar y ser carga activa.
@@ -106,5 +110,114 @@ $$I_b=17.5uA $$
 $$I_c=1.93 mA $$
 $$V_{ce}=12.6V $$
 
+\subsubsection{Modelo incremental}
+Los tres transistores comparten la misma corriente de colector y también de base, ya que los tres transistores son iguales. Por ende poseen los  mismos parámetros híbridos.
+$$\widehat{\frac{1}{h_{oe}}}\cong \frac{V_A}{I_{Cq}} $$
+$$ \widehat{h_{ie}}\cong (h_{fe}+1)\frac{V_T}{I_{Cq}}$$
+
+Evaluando las expresiones anteriores con los resultados obtenidos  anteriormente, y con el contenido de las tablas \ref{tab:comp} y \ref{tab:qcar}, obtenemos :
+
+$$\frac{1}{h_{oe}}\cong 50.8K \Omega $$
+$$ h_{ie}\cong 2.2K\Omega $$
+
+\subsubsection{Circuito incremental}
+En la siguiente figura se puede observar el circuito incremental del amplificador. $R_{Os}\cong \frac{1}{h_{oe}}\cong 50.8K \Omega  $ es la impedancia de salida de la fuente espejo. 
+\begin{figure}[H]	
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagenes/incr.png}
+	\caption{Circuito incremental}
+\end{figure}
+
+A partir del circuito incremental se obtuvieron las siguientes relaciones:
+
+\begin{equation}
+R_d=\left( R_{L} // \frac{1}{h_{oe}} // R_{Os} \right)
+\end{equation}
+\begin{equation}
+V_{o}=\left( h{fe} +1 \right) I_{b} R_d
+\end{equation}
+\begin{equation}
+V_{i}=\left( h{fe} +1 \right) I_{b} R_d + h_{ie} I_{b} \label{eq:ri}
+\end{equation}
+
+
+
+Defieniendo $\Delta V =\frac{V_o}{V_i}$ y simplificando:
+
+\begin{equation}
+\Delta V =\frac{V_o}{V_i}=\frac{\left( h{fe} +1 \right) R_d}{\left( h{fe} +1 \right) R_d + h_{ie} }
+\end{equation}
+
+Tambien se define  $\Delta V_s =\frac{V_o}{V_s}$
+
+\begin{equation}
+\Delta V_s =\frac{V_o}{V_s}=\frac{V_i}{V_s} \frac{V_o}{V_i} =\frac{V_i}{V_s}\Delta V 
+\end{equation}
+
+Donde
+\begin{equation}
+\frac{V_i}{V_s} = \frac{R_{ia}}{R_{ia}+R_s}
+\end{equation}
+
+Dividiendo la ecuación \ref{eq:ri} por $I_b$ obtenemos $R_i$
+
+\begin{equation}
+R_i=\frac{V_i}{I_b} = \left( h{fe} +1 \right) R_d + h_{ie}
+\end{equation}
+
+\begin{equation}
+R_{ia}=R_i // R_b=\frac{R_i R_b}{R_i + R_b}
+\end{equation}
+
+Para hallar la impedancia de salida se pasivo la fuente $V_s$ y se conectó a la salida un generador y se calculó el consciente tensión corriente.
+
+\begin{equation}
+R_o=\left( \frac{h_{ie} + \left( R_s // R_b \right)}{h_{fe}+1} \right) // \frac{1}{h_{oe}}
+\end{equation}
+
+\begin{equation}
+R_{oa}=R_o // R_{os}
+\end{equation}
+
+Finalmente la ganancia de corriente $\Delta I=\frac{I_{R_L}}{I_{in}}$
+
+\begin{equation}
+\Delta I=\frac{R_b}{R_b +R_i} \frac{\left(  \frac{1}{h_{oe}} // R_{Os} \right)}{\left(  \frac{1}{h_{oe}} // R_{Os} \right) + R_L} (h_{fe} +1)
+\end{equation}
+
+Finalemente reemplazando los valores obtenidos de las tablas \ref{tab:comp} y \ref{tab:qcar}, en las ecuaciones, se obtuvieron los siguientes valores:
+
+$$\Delta V = 0.9937$$
+$$ \Delta V_s =0.9912 $$
+$$ R_I=338184 \Omega $$
+$$ R_{ia} = 225858\Omega $$
+$$ R_o=13.25 \Omega $$
+$$R_{oa}=13.25\Omega $$
+$$\Delta I= 102 $$
+
+\subsection{Medición del amplificador}
+Se realizó el amplificador en protoboard (figura \ref{fig:pro}) y se midieron los parametros calculados anterioremnte:
+
+\begin{figure}[H]	
+	\centering
+	\includegraphics[width=0.5\textwidth]{imagenes/proto.png}
+	\caption{Circuito implementado}\label{fig:pro}
+\end{figure}
+
+$$\Delta V = 0.99$$
+$$ \Delta V_s =0.99 $$
+$$ R_{ia} = 434K\Omega $$
+$$R_{oa}=900\Omega $$
+$$\Delta I= 78 $$
+
+
+\section{Conclusión}
+Comparando los resultados de la medición se observa que hay gran diferencia en las impedancias de entrada y de salida comparando con las teorica. Esto se pudo deber a que el hfe utilizado no sea el correcto, debido a que el fabricante lo da en un rango, los cálculos se realizaron con el typico. 
+\par Las características más sobresalientes del circuito son su alta impedancia de entrada, su baja impedancia de salida, la ganancia de tensión es prácticamente uno y su alta ganancia de corriente.
+
+
+
 
 \end{document}
+
+
