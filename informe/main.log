@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.5.27)  31 OCT 2018 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.5.13)  12 NOV 2018 18:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -1197,7 +1197,7 @@ Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
 \AM@pagewidth=\dimen256
 \AM@pageheight=\dimen257
@@ -1421,126 +1421,94 @@ been already used, duplicate ignored
                    \relax 
 l.11 \newpage
               [1] (Ej1/Informe/ej1.tex
-Overfull \hbox (41.98643pt too wide) in paragraph at lines 8--8
-[]\T1/cmr/bx/n/14.4 Comparación de los meto-dos de medi-ción de equi-lib-rio de
- puentes 
+<Ej1/Informe/imagenes/circuito.png, id=65, 708.6475pt x 334.24875pt>
+File: Ej1/Informe/imagenes/circuito.png Graphic file (type png)
+
+<use Ej1/Informe/imagenes/circuito.png>
+Package pdftex.def Info: Ej1/Informe/imagenes/circuito.png used on input line 1
+6.
+(pdftex.def)             Requested size: 354.32289pt x 167.12396pt.
+
+Overfull \hbox (50.74165pt too wide) in paragraph at lines 41--41
+[][][]\T1/cmr/m/n/8 Datasheet del BC547: Spark-fun.com. (2018). [on-line] Dispo
+nible en: https://www.sparkfun.com/datasheets/Components/BC546.pdf
  []
 
-) (Ej2/Informe/ej2.tex
-<Ej2/Informe/fotos/PuenteGen.png, id=114, 301.125pt x 261.97874pt>
-File: Ej2/Informe/fotos/PuenteGen.png Graphic file (type png)
+[2 <./Ej1/Informe/imagenes/circuito.png>]
+<Ej1/Informe/imagenes/mirrorsource.png, id=80, 378.41376pt x 283.0575pt>
+File: Ej1/Informe/imagenes/mirrorsource.png Graphic file (type png)
 
-<use Ej2/Informe/fotos/PuenteGen.png>
-Package pdftex.def Info: Ej2/Informe/fotos/PuenteGen.png used on input line 10.
+<use Ej1/Informe/imagenes/mirrorsource.png>
+Package pdftex.def Info: Ej1/Informe/imagenes/mirrorsource.png used on input li
+ne 63.
+(pdftex.def)             Requested size: 182.09485pt x 136.20726pt.
 
-(pdftex.def)             Requested size: 159.3382pt x 138.6282pt.
- [2]
-<Ej2/Informe/fotos/r3r.png, id=125, 599.99156pt x 385.44pt>
-File: Ej2/Informe/fotos/r3r.png Graphic file (type png)
+<Ej1/Informe/imagenes/pol.png, id=81, 312.16624pt x 285.065pt>
+File: Ej1/Informe/imagenes/pol.png Graphic file (type png)
 
-<use Ej2/Informe/fotos/r3r.png>
-Package pdftex.def Info: Ej2/Informe/fotos/r3r.png used on input line 23.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
- [3 <./Ej2/Informe/fotos/PuenteGen.png>]
-<Ej2/Informe/fotos/r3f.png, id=141, 599.99156pt x 385.44pt>
-File: Ej2/Informe/fotos/r3f.png Graphic file (type png)
+<use Ej1/Informe/imagenes/pol.png>
+Package pdftex.def Info: Ej1/Informe/imagenes/pol.png used on input line 76.
+(pdftex.def)             Requested size: 182.09485pt x 166.2904pt.
+ [3 <./Ej1/Informe/imagenes/mirrorsource.png>] [4 <./Ej1/Informe/imagenes/pol.p
+ng>]
+<Ej1/Informe/imagenes/incr.png, id=113, 733.74126pt x 226.8475pt>
+File: Ej1/Informe/imagenes/incr.png Graphic file (type png)
 
-<use Ej2/Informe/fotos/r3f.png>
-Package pdftex.def Info: Ej2/Informe/fotos/r3f.png used on input line 29.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
+<use Ej1/Informe/imagenes/incr.png>
+Package pdftex.def Info: Ej1/Informe/imagenes/incr.png used on input line 125.
+(pdftex.def)             Requested size: 409.71689pt x 126.67374pt.
+ [5 <./Ej1/Informe/imagenes/incr.png>]
+[6] <Ej1/Informe/imagenes/proto.png, id=142, 253.4268pt x 130.086pt>
+File: Ej1/Informe/imagenes/proto.png Graphic file (type png)
 
-<Ej2/Informe/fotos/r1r.png, id=142, 599.99156pt x 385.44pt>
-File: Ej2/Informe/fotos/r1r.png Graphic file (type png)
+<use Ej1/Informe/imagenes/proto.png>
+Package pdftex.def Info: Ej1/Informe/imagenes/proto.png used on input line 201.
 
-<use Ej2/Informe/fotos/r1r.png>
-Package pdftex.def Info: Ej2/Informe/fotos/r1r.png used on input line 36.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
- [4 <./Ej2/Informe/fotos/r3r.png (PNG copy)> <./Ej2/Informe/fotos/r3f.png (PNG 
-copy)>]
-<Ej2/Informe/fotos/r1f.png, id=149, 599.99156pt x 385.44pt>
-File: Ej2/Informe/fotos/r1f.png Graphic file (type png)
+(pdftex.def)             Requested size: 227.62204pt x 116.84207pt.
+) [7 <./Ej1/Informe/imagenes/proto.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 
-<use Ej2/Informe/fotos/r1f.png>
-Package pdftex.def Info: Ej2/Informe/fotos/r1f.png used on input line 42.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
- [5 <./Ej2/Informe/fotos/r1r.png (PNG copy)> <./Ej2/Informe/fotos/r1f.png (PNG 
-copy)>]
-<Ej2/Informe/fotos/conv.png, id=156, 599.99156pt x 385.44pt>
-File: Ej2/Informe/fotos/conv.png Graphic file (type png)
-
-<use Ej2/Informe/fotos/conv.png>
-Package pdftex.def Info: Ej2/Informe/fotos/conv.png used on input line 78.
-(pdftex.def)             Requested size: 409.71689pt x 263.21318pt.
- [6 <./Ej2/Informe/fotos/conv.png (PNG copy)>]) (Ej3/Informe/ej3.tex
-File: Ej2/Informe/fotos/PuenteGen.png Graphic file (type png)
- <use Ej2/Informe/fotos/PuenteGen.png>
-Package pdftex.def Info: Ej2/Informe/fotos/PuenteGen.png used on input line 9.
-(pdftex.def)             Requested size: 159.3382pt x 138.6282pt.
- [7]
-<Ej3/Informe/fotos/sen.png, id=171, 421.575pt x 316.18124pt>
-File: Ej3/Informe/fotos/sen.png Graphic file (type png)
-
-<use Ej3/Informe/fotos/sen.png>
-Package pdftex.def Info: Ej3/Informe/fotos/sen.png used on input line 26.
-(pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
- [8 <./Ej3/Informe/fotos/sen.png (PNG copy)>]
-<Ej3/Informe/fotos/conv_cx.png, id=178, 599.99156pt x 385.44pt>
-File: Ej3/Informe/fotos/conv_cx.png Graphic file (type png)
-
-<use Ej3/Informe/fotos/conv_cx.png>
-Package pdftex.def Info: Ej3/Informe/fotos/conv_cx.png used on input line 57.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
-
-<Ej3/Informe/fotos/conv_dx.png, id=179, 599.99156pt x 385.44pt>
-File: Ej3/Informe/fotos/conv_dx.png Graphic file (type png)
-
-<use Ej3/Informe/fotos/conv_dx.png>
-Package pdftex.def Info: Ej3/Informe/fotos/conv_dx.png used on input line 63.
-(pdftex.def)             Requested size: 318.66946pt x 204.72333pt.
- [9 <./Ej3/Informe/fotos/conv_cx.png (PNG copy)>] [10 <./Ej3/Informe/fotos/conv
-_dx.png (PNG copy)>] [11]) [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
- (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+(main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F72AF300BE172835BAC462695F5F2A97;1317.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+(rerunfilecheck)             Checksum: 9CACE6057D09BE18B2A9A3C4FF826D55;537.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
  ) 
 Here is how much of TeX's memory you used:
- 28460 strings out of 493333
- 600992 string characters out of 3136608
- 761472 words of memory out of 3000000
- 31411 multiletter control sequences out of 15000+200000
- 23949 words of font info for 66 fonts, out of 3000000 for 9000
+ 28406 strings out of 493333
+ 599857 string characters out of 3136608
+ 759305 words of memory out of 3000000
+ 31381 multiletter control sequences out of 15000+200000
+ 26247 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,9n,94p,909b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-tcrm1000.pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbx1200.pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Rochi\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Rochi\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Rochi\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Us
-ers\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.
-pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecbx2488.pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\eccc1440.pk> <C:\Users\Rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecxc1728.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y7.pfb>
-Output written on main.pdf (13 pages, 440244 bytes).
+ 64i,11n,94p,909b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecrm0800.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0600.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\rochi\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\rochi\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\rochi\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Us
+ers\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.
+pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\eccc1200.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecti1200.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\rochi\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\rochi\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1728.pk><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (8 pages, 565416 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

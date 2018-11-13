@@ -6,7 +6,7 @@
 
 \begin{document}
 \section{Introducción}
-En el presente informe se desarrollra el análisis te\'orico de un amplificador implementado a partir de transistores, la construcción de dicho amplificador y la medición de sus características. El objetivo de este an\'alisis es comprobar en la pr\'actica algunos de los aspectos mas destacados de los circuitos estudiados durante el curso de Electr\'onica I, dentro de un marco de simulación de recursos escasos.
+En el presente informe se desarrollar\'a el análisis te\'orico de un amplificador implementado a partir de transistores, la construcción de dicho amplificador y la medición de sus características. El objetivo de este an\'alisis es comprobar en la pr\'actica algunos de los aspectos m\'as destacados de los circuitos estudiados durante el curso de Electr\'onica I, dentro de un marco de simulación de recursos escasos.
 
 \section{Amplificador}
 Se construyó el amplificador de la figura \ref{fig:cir}. Tal como se observa en ella, el circuito es un colector común con una fuente de corriente, cuyo objetivo es polarizar y ser carga activa.
@@ -25,10 +25,10 @@ Los valores de los componenetes del circuito son los indicados en la siguiente t
 Componente& Valor\\
 \hline \hline
 $R_S$ & $560 \Omega$  \\ \hline
-$R_L$ & $2.2 K \Omega$  \\ \hline
-$R_B$ & $680 K \Omega$  \\ \hline
-$R_1$ & $10K\Omega$  \\ \hline
-$C$ & $1uF$  \\ \hline
+$R_L$ & $2.2 \mathrm{k} \Omega$  \\ \hline
+$R_B$ & $680 \mathrm{k} \Omega$  \\ \hline
+$R_1$ & $10\mathrm{k}\Omega$  \\ \hline
+$C$ & $1\mu \mathrm{F}$  \\ \hline
 $V_{POL}$ & $20V$  \\ \hline
 $Q_1 = Q_2 = Q_3$ & BC547  \\ \hline
 
@@ -69,7 +69,7 @@ Suponiendo que $Q_2$ y $Q_3$ son transistores iguales, tambien sus corrientes de
 I_{REF}=\frac{V_{POL}-V_{BE}}{R_1}\label{eq:mss}
 \end{equation}
 
-Conociendo las características de la fuente de corriente, se analizara la polarización del circuito:
+Conociendo las características de la fuente de corriente, se analizar\'a la polarización del circuito:
 
 \begin{figure}[H]	
 	\centering
@@ -103,7 +103,7 @@ Restando ambas expresiones obtenemos:
 V_{CE}=I_B R_B + V_{CE}
 \end{equation}
 
-Finalmnete reemplazando con los valores de los componentes de las tablas \ref{tab:comp} y \ref{tab:qcar}, obtenemos :
+Finalmente reemplazando con los valores de los componentes de las tablas \ref{tab:comp} y \ref{tab:qcar}, obtenemos :
 $$I_B=17.5\mu \mathrm{A} $$
 $$I_C=1.93 \mathrm{mA} $$
 $$V_{CE}=12.6\mathrm{V} $$
@@ -204,8 +204,8 @@ Se realizó el amplificador en protoboard (figura \ref{fig:pro}) y se midieron l
 
 $$\Delta v = 0.99$$
 $$ \Delta v_S =0.99 $$
-$$ R_{IA} = 434\mathrm{k}\Omega $$
-$$R_{OA}=900\Omega $$
+$$ R_{IA} = 175\mathrm{k}\Omega $$
+$$R_{OA}=145\Omega $$
 $$\Delta i= 78 $$
 
 
