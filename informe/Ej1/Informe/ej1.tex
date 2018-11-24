@@ -53,6 +53,15 @@ $H_{FE}$(DC)& $h_{fe}$ (AC)&$V_A$\\
 \end{center}
 \end{table}
 
+La tensión de Early se obtuvo proyectando una recta en la zona lineal de la curva $I_C$ en función de $V_{CE}$, tal como se observa en la figura \ref{fig:vea}. En el punto donde la recta azul corte el eje horizontal es $V_A$
+
+\begin{figure}[H]	
+	\centering
+	\includegraphics[width=0.4\textwidth]{imagenes/vea.png}
+	\caption{Tención de Early}\label{fig:vea}
+\end{figure}
+
+
 \subsection{Análisis del amplificador}
 En esta sección se analizar\'a la polarización y las características de pequeñas señales del amplificador.
 \subsubsection{Polarización}
@@ -63,7 +72,15 @@ Para analizar la polarización del circuito, se pasivar\'an las fuentes del alte
 	\includegraphics[width=0.4\textwidth]{imagenes/mirrorsource.png}
 	\caption{Fuente de corriente constante}\label{fig:ms}
 \end{figure}
-Suponiendo que $Q_2$ y $Q_3$ son transistores iguales, tambien sus corrientes de base son iguales, y por ende sus corriente de colector también lo son, y asumiendo que la corriente de base es despreciable frente a la de colector, entonces $I_{OUT}=I_{REF}$. 
+\begin{equation}
+I_{REF}=I_{CQ3}+I_{BQ3}+I_{BQ2}
+\end{equation}
+Suponiendo que $Q_2$ y $Q_3$ son transistores iguales, entonces
+\begin{equation}
+I_{REF}=I_{CQ3}+2\cdot I_{B}
+\end{equation}
+Suponiendo que las corrientes de base($\micro A$) son pequeñas frentes a las de colector($m A$),
+$I_{OUT}\cong I_{REF}$.
 \par Recorriendo la malla de entrada de $Q_3$ obtenemos que:
 \begin{equation}
 I_{REF}=\frac{V_{POL}-V_{BE}}{R_1}\label{eq:mss}
@@ -192,6 +209,36 @@ $$ R_{IA} = 226\mathrm{k}\Omega $$
 $$ R_O=13.3 \Omega $$
 $$R_{OA}=13.3\Omega $$
 $$\Delta i= 102 $$
+
+\subsection{Simulación del amplificador}
+Se simulo en LTSPICE, la respuesta en frecuencia del amplificador, su comportamiento en pequeñas señales y su polarización.
+
+\begin{figure}[H]	
+	\centering
+	\fbox{\includegraphics[width=0.4\textwidth]{imagenes/cirsim.png}}
+	\caption{Circuito simulado}
+\end{figure}
+
+\begin{figure}[H]	
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{imagenes/simicq.png}}
+	\caption{Corriente de polarizacion}\label{fig:simicq}
+\end{figure}
+Tal como se observa en la figura \ref{fig:simicq}, la corriente de polarización, del amplificador es del orden de los $2mA$, coincidiendo con el resultado calculado en el análisis teórico.
+
+\begin{figure}[H]	
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{imagenes/simgain.png}}
+	\caption{Ganancia de tensión}\label{fig:simgain}
+\end{figure}
+La figura \ref{fig:simgain}, muestra la tensión de entrada del amplificador (color negro), y la tensión de salida (color azul). La amplitud de ambas señales es aproximadamente $20mV$, coincidiendo con lo calculado, la ganancia del amplificador es aproximadamente uno.
+
+\begin{figure}[H]	
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{imagenes/simrtafrec.png}}
+	\caption{Respuesta en frecuencia}\label{fig:simrtafrec}
+\end{figure}
+La figura \ref{fig:simrtafrec} es la simulación de la respuesta en frecuancia del circuito, tal como se oberva se obtuvo un pasabanda.
 
 \subsection{Medición del amplificador}
 Se realizó el amplificador en protoboard (figura \ref{fig:pro}) y se midieron los parametros calculados anteriormente:

@@ -1,0 +1,18 @@
+* C:\Users\Sony\Documents\GitHub\ELECTRO1_TP2\simulacion\opcion 2.asc
+Q1 N001 N004 N005 0 BC547B
+R1 N001 N004 680k
+V1 N001 0 20
+C1 N004 N003 1µ
+R3 N003 N002 560
+R4 N007 0 2.2k
+Q2 N006 N006 0 0 BC547B
+Q3 N005 N006 0 0 BC547B
+C2 N005 N007 1µ
+V2 N002 0 SINE(0 10mv 4k) AC 1
+R2 N001 N006 10k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Sony\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.ac dec 100 1 1000000000
+.backanno
+.end
