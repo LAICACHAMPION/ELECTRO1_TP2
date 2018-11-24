@@ -38,7 +38,7 @@ $Q_1 = Q_2 = Q_3$ & BC547  \\ \hline
 \end{table}
 
 
-Las caracterisiticas de los transistores son las siguientes \footnote{Datasheet del BC547: Sparkfun.com. (2018). [online] Disponible en: https://www.sparkfun.com/datasheets/Components/BC546.pdf [Accedido 10 Nov. 2018].} :
+Las caracter\'isticas de los transistores son las siguientes \footnote{Datasheet del BC547: Sparkfun.com. (2018). [online] Disponible en: https://www.sparkfun.com/datasheets/Components/BC546.pdf [Accedido 10 Nov. 2018].} :
 
 \begin{table}[h]
 \begin{center}
@@ -53,7 +53,7 @@ $H_{FE}$(DC)& $h_{fe}$ (AC)&$V_A$\\
 \end{center}
 \end{table}
 
-La tensión de Early se obtuvo proyectando una recta en la zona lineal de la curva $I_C$ en función de $V_{CE}$, tal como se observa en la figura \ref{fig:vea}. En el punto donde la recta azul corte el eje horizontal es $V_A$
+La tensión de Early ($V_A$) se obtuvo proyectando una recta en la zona lineal de la curva $I_C$ en función de $V_{CE}$, tal como se observa en la figura \ref{fig:vea}. $V_A$ se encuentra en la intersecci\'on de la recta azul con el eje horizontal.
 
 \begin{figure}[H]	
 	\centering
@@ -65,7 +65,7 @@ La tensión de Early se obtuvo proyectando una recta en la zona lineal de la cur
 \subsection{Análisis del amplificador}
 En esta sección se analizar\'a la polarización y las características de pequeñas señales del amplificador.
 \subsubsection{Polarización}
-Para analizar la polarización del circuito, se pasivar\'an las fuentes del alterna. Lo primero a calcular es la fuente de corriente de la figura \ref{fig:ms}.
+Para analizar la polarización del circuito se pasivaron las fuentes del alterna. Lo primero a calcular es la fuente de corriente de la figura \ref{fig:ms}.
 
 \begin{figure}[H]	
 	\centering
@@ -166,7 +166,7 @@ Defieniendo $\Delta v =\frac{v_O}{v_I}$ y simplificando:
 Tambien se define  $\Delta v_S =\frac{v_O}{v_S}$
 
 \begin{equation}
-\Delta v_S =\frac{v_O}{v_S}=\frac{v_I}{v_S} \frac{v_O}{v_I} =\frac{v_I}{v_S}\Delta V 
+\Delta v_S =\frac{v_O}{v_S}=\frac{v_I}{v_S} \frac{v_O}{v_I} =\frac{v_I}{v_S}\Delta v 
 \end{equation}
 
 Donde
@@ -211,7 +211,7 @@ $$R_{OA}=13.3\Omega $$
 $$\Delta i= 102 $$
 
 \subsection{Simulación del amplificador}
-Se simulo en LTSPICE, la respuesta en frecuencia del amplificador, su comportamiento en pequeñas señales y su polarización.
+Se simul\'o en LTSPICE la respuesta en frecuencia del amplificador, su comportamiento en pequeñas señales y su polarización.
 
 \begin{figure}[H]	
 	\centering
@@ -224,14 +224,14 @@ Se simulo en LTSPICE, la respuesta en frecuencia del amplificador, su comportami
 	\fbox{\includegraphics[width=0.6\textwidth]{imagenes/simicq.png}}
 	\caption{Corriente de polarizacion}\label{fig:simicq}
 \end{figure}
-Tal como se observa en la figura \ref{fig:simicq}, la corriente de polarización, del amplificador es del orden de los $2mA$, coincidiendo con el resultado calculado en el análisis teórico.
+Tal como se observa en la figura \ref{fig:simicq}, la corriente de polarización del amplificador es del orden de los $2mA$, coincidiendo con el resultado calculado en el análisis teórico.
 
 \begin{figure}[H]	
 	\centering
 	\fbox{\includegraphics[width=0.6\textwidth]{imagenes/simgain.png}}
 	\caption{Ganancia de tensión}\label{fig:simgain}
 \end{figure}
-La figura \ref{fig:simgain}, muestra la tensión de entrada del amplificador (color negro), y la tensión de salida (color azul). La amplitud de ambas señales es aproximadamente $20mV$, coincidiendo con lo calculado, la ganancia del amplificador es aproximadamente uno.
+La figura \ref{fig:simgain} muestra la tensión de entrada del amplificador (color negro) y la tensión de salida (color azul). La amplitud de ambas señales es aproximadamente $20mV$. Coincidiendo con lo calculado, la ganancia del amplificador es aproximadamente uno.
 
 \begin{figure}[H]	
 	\centering
@@ -241,7 +241,7 @@ La figura \ref{fig:simgain}, muestra la tensión de entrada del amplificador (co
 La figura \ref{fig:simrtafrec} es la simulación de la respuesta en frecuancia del circuito, tal como se oberva se obtuvo un pasabanda.
 
 \subsection{Medición del amplificador}
-Se realizó el amplificador en protoboard (figura \ref{fig:pro}) y se midieron los parametros calculados anteriormente:
+Se realizó el amplificador en protoboard (figura \ref{fig:pro}) y se midieron los par\'ametros calculados anteriormente:
 
 \begin{figure}[H]	
 	\centering
@@ -269,8 +269,8 @@ $$\Delta i= 78 $$
 
 
 \section{Conclusión}
-Comparando los resultados de la medición se observa que hay gran diferencia en las impedancias de entrada y de salida comparando con las te\'oricas. Esto se pudo deber a que el $h_{fe}$ utilizado no sea el correcto, debido a que el fabricante lo da en un rango, y los cálculos se realizaron con el t\'ipico. 
-\par Las características más sobresalientes del circuito son su alta impedancia de entrada, su baja impedancia de salida, la ganancia de tensión es prácticamente uno y su alta ganancia de corriente.
+Comparando los resultados de la medición se observa que hay gran diferencia en las impedancias de entrada y de salida comparando con las te\'oricas. Esto se pudo deber a que el $h_{fe}$ utilizado no sea el correcto debido a que el fabricante lo da en un rango y los cálculos se realizaron con el t\'ipico. 
+\par Las características más sobresalientes del circuito son su alta impedancia de entrada, su baja impedancia de salida, la ganancia de tensión ($\approx$ 1) y su alta ganancia de corriente.
 
 
 
